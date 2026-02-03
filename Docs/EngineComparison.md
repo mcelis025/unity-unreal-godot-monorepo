@@ -1,6 +1,12 @@
+# EngineComparison
+
+## Similarity
 The similarity I found was that all I had to do to import the Kenney assets was drag and drop the models folder into the project and start building. 
+## Difference
 The difference was that I had to set up a camera and lighting in Godot while Unity and Unreal already had lighting and a camera. As far as complexity goes, from greatest to least: Unreal, Unity, and Godot. Unreal gives the user many options to manipulate the prefabs. Unity also allows manipulation of the prefab, but it's much friendlier to use. Godot had the simplest manipulation tools, but also had the ability to manipulate.
 
+## Instancing / Prefabs
 I found that in Unity there are different ways to create prefabs. In Unreal, we have to create a Blueprint class, and we have the ability to make it very complex with many functions and components that could be manipulated. In Godot, all we need to do is create a node and add the assets. It felt much quicker and easier to navigate Godot (once I understood it) and Unity. In the end, we just put all the assets together in their respective screens and back out and place the prefab in the level.
 
+## My Pick
 I would choose Unreal as it gives me the most options, if necessary, but Godot was the fastest once I understood what nodes were. 
