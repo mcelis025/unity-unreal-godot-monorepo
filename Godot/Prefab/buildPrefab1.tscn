@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bx55eoeknnwpp"]
+
+[ext_resource type="PackedScene" uid="uid://cfbwm132ohg4x" path="res://Assets/FBX format/building-type-d.fbx" id="1_75stl"]
+[ext_resource type="PackedScene" uid="uid://vimsvr6wo7ei" path="res://Assets/FBX format/building-type-e.fbx" id="2_myc3c"]
+[ext_resource type="PackedScene" uid="uid://cmpatfjb5de3n" path="res://Assets/FBX format/path-short.fbx" id="3_vpx1e"]
+
+[node name="BuildPrefab1" type="Node3D" unique_id=1172784638]
+
+[node name="building-type-d" parent="." unique_id=1884516967 instance=ExtResource("1_75stl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7459921, 1.1920929e-07, -0.46641707)
+
+[node name="path-short2" parent="building-type-d" unique_id=1080352164 instance=ExtResource("3_vpx1e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15612936, -1.1920929e-07, -0.45247883)
+
+[node name="path-short3" parent="building-type-d/path-short2" unique_id=834875866 instance=ExtResource("3_vpx1e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.19694859)
+
+[node name="building-type-e" parent="." unique_id=1531247295 instance=ExtResource("2_myc3c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5769144, 0, -0.46431994)
+
+[node name="path-short" parent="building-type-e" unique_id=347445726 instance=ExtResource("3_vpx1e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0046890974, 0, -0.45624518)
+
+[node name="path-short2" parent="building-type-e/path-short" unique_id=606941114 instance=ExtResource("3_vpx1e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00014770031, 0, -0.19879436)
