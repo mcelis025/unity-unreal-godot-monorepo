@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://d37dgj4wsmyld"]
+
+[ext_resource type="PackedScene" uid="uid://dm6ocaq7hd0w6" path="res://Assets/FBX format/building-type-p.fbx" id="1_a5hbo"]
+[ext_resource type="PackedScene" uid="uid://7e6gf52vsrt5" path="res://Assets/FBX format/fence-1x3.fbx" id="2_1n7ft"]
+[ext_resource type="PackedScene" uid="uid://cumesqf5aex12" path="res://Assets/FBX format/building-type-q.fbx" id="3_0gh2n"]
+
+[node name="BuildingPrefab2" type="Node3D" unique_id=1933339887]
+
+[node name="building-type-p" parent="." unique_id=1528306186 instance=ExtResource("1_a5hbo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6247226, 0, -0.5163448)
+
+[node name="fence-1x3" parent="building-type-p" unique_id=29304699 instance=ExtResource("2_1n7ft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009584844, 0, 0.6617664)
+
+[node name="building-type-q" parent="." unique_id=441568526 instance=ExtResource("3_0gh2n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8951668, 1.1920929e-07, -0.40131617)
+
+[node name="fence-1x4" parent="building-type-q" unique_id=793021230 instance=ExtResource("2_1n7ft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.013542354, -2.3841858e-07, 0.57345784)

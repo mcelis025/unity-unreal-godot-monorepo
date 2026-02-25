@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bdeifpxyn0tcx"]
+
+[ext_resource type="PackedScene" uid="uid://bhj0sqtroqpi3" path="res://Assets/FBX format/tree-large.fbx" id="1_olhmx"]
+[ext_resource type="PackedScene" uid="uid://belitpj3w46pm" path="res://Assets/FBX format/tree-small.fbx" id="2_gohc3"]
+
+[node name="TreePrefab1" type="Node3D" unique_id=1438767655]
+
+[node name="tree-large" parent="." unique_id=254568054 instance=ExtResource("1_olhmx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05307269, -1.1920929e-07, -0.040170908)
+
+[node name="tree-small" parent="tree-large" unique_id=27360871 instance=ExtResource("2_gohc3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16167486, 1.1920929e-07, 0.02023983)
+
+[node name="tree-small2" parent="tree-large/tree-small" unique_id=460366244 instance=ExtResource("2_gohc3")]
+transform = Transform3D(1.264103, 0, 0, 0, 1.426364, 0, 0, 0, 1.3383803, 0.03737712, 0, -0.20353693)
