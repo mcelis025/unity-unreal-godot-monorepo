@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bfsarbm0shhrx"]
+
+[ext_resource type="PackedScene" uid="uid://bylp2tvf6hcn4" path="res://Scenes/Floor.tscn" id="1_6bvud"]
+[ext_resource type="PackedScene" uid="uid://cyxeuf1q1jq6u" path="res://Scenes/Coin.tscn" id="2_ww18a"]
+[ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://Scenes/Player.tscn" id="3_0obbo"]
+[ext_resource type="PackedScene" uid="uid://bx55eoeknnwpp" path="res://Prefab/buildPrefab1.tscn" id="4_svajd"]
+[ext_resource type="PackedScene" uid="uid://bdeifpxyn0tcx" path="res://Prefab/TreePrefab1.tscn" id="5_u7eci"]
+[ext_resource type="PackedScene" uid="uid://d37dgj4wsmyld" path="res://Prefab/BuildingPrefab2.tscn" id="6_g0h0v"]
+
+[node name="World" type="Node3D" unique_id=811738529]
+
+[node name="Floor" parent="." unique_id=1973484622 instance=ExtResource("1_6bvud")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8981863, -0.49445963, -1.120008)
+
+[node name="Coin" parent="." unique_id=1691764726 instance=ExtResource("2_ww18a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.748663, 0.5055404, 6.0985713)
+
+[node name="Player" parent="." unique_id=1045895635 groups=["Player"] instance=ExtResource("3_0obbo")]
+transform = Transform3D(-0.7609838, 0, 0.64877105, 0, 1, 0, -0.64877105, 0, -0.7609838, 4.8747063, 1.0055404, -8.184031)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=777720249]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 10, 0)
+
+[node name="BuildPrefab1" parent="." unique_id=1172784638 instance=ExtResource("4_svajd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9915543, 0.005540371, 2.4738894)
+
+[node name="TreePrefab1" parent="." unique_id=1438767655 instance=ExtResource("5_u7eci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7527575, 0.00554049, 3.0002036)
+
+[node name="BuildingPrefab2" parent="." unique_id=1933339887 instance=ExtResource("6_g0h0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.510913, 0.00554049, -4.1744123)

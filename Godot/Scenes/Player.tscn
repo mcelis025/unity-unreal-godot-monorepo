@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ckudr8chj1kgo"]
+
+[ext_resource type="Script" uid="uid://c1nkb217t4usv" path="res://addons/proto_controller/proto_controller.gd" id="1_rpqav"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0rwas"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xhfnw"]
+albedo_color = Color(0.34509805, 1, 1, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_kpjcp"]
+
+[node name="Player" type="CharacterBody3D" unique_id=1045895635]
+script = ExtResource("1_rpqav")
+
+[node name="Collider" type="CollisionShape3D" parent="." unique_id=299147237]
+shape = SubResource("CapsuleShape3D_0rwas")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=648231183]
+material_override = SubResource("StandardMaterial3D_xhfnw")
+mesh = SubResource("CapsuleMesh_kpjcp")
+
+[node name="Head" type="Node3D" parent="." unique_id=1202888681]
+
+[node name="Camera3D" type="Camera3D" parent="Head" unique_id=189855470]
