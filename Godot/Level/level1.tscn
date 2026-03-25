@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bx55eoeknnwpp" path="res://Prefab/buildPrefab1.tscn" id="1_b1hmd"]
 [ext_resource type="PackedScene" uid="uid://d37dgj4wsmyld" path="res://Prefab/BuildingPrefab2.tscn" id="2_rsepj"]
 [ext_resource type="PackedScene" uid="uid://bdeifpxyn0tcx" path="res://Prefab/TreePrefab1.tscn" id="3_rsepj"]
+[ext_resource type="PackedScene" uid="uid://ly307xx4jrnn" path="res://meshes/character.tscn" id="4_nkc7i"]
 
 [node name="Node3D" type="Node3D" unique_id=1093089556]
 
@@ -35,3 +36,6 @@ transform = Transform3D(-0.80924267, 0, 0.5874746, 0, 1, 0, -0.5874746, 0, -0.80
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1834749108]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 8.380903, 0)
+
+[node name="Character" parent="." unique_id=544689271 instance=ExtResource("4_nkc7i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7065282, 0, -2.3598278)
